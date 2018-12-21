@@ -1,0 +1,27 @@
+package com.gmail.vladd;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Введіть довжину сторони a трикутника(см)");
+		double a = sc.nextInt();
+		
+		System.out.println("Введіть довжину сторони b трикутника (см)");
+		double b = sc.nextInt();
+		
+		System.out.println("Введіть довжину сторони c трикутника (см)");
+		double c = sc.nextInt();
+		
+		double p = (a+b+c)/2;
+		
+		double s = Math.sqrt(p*(p-a)*(p-b)*(p-c));
+		
+		System.out.println("Площа трикутника дорівнює " +s);
+	}
+
+}
